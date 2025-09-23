@@ -1,17 +1,22 @@
 public class Funcionario {
+    public static void main(String[] args) {
+    return;
+    }   
+    
+    private String nome;
+    private String cpf;
+    private float salarioBase;
 
-    String name;
-    String cpf;
-    float salarioBase;
+    public Funcionario() {
+    }
 
-    public Funcionario(String name, String cpf, float salarioBase) {
-        this.name = name;
+    public Funcionario(String nome, String cpf, float salarioBase) {
+        this.nome = nome;
         this.cpf = cpf;
         this.salarioBase = salarioBase;
     }
 
-
-    public float getSalarioFinal(this.salarioBase){
-        return salarioBase;
+    public float getSalarioFinal(){
+        return this.salarioBase;
     }
 }
