@@ -1,5 +1,17 @@
 public class Funcionario {
-    public static void main(String[] args) {
-        
+
+    String name;
+    int cpf;
+    int salarioBase;
+
+    public static  main(String name, int cpf, int salarioBase) {
+        this.name = name;
+        this.cpf = cpf;
+        this.salarioBase;
+    }
+
+
+    public int getSalarioFinal(this.salarioBase){
+        return salarioBase;
     }
 }
