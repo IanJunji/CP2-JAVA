@@ -7,7 +7,7 @@ public class Funcionario {
     public static  main(String name, int cpf, int salarioBase) {
         this.name = name;
         this.cpf = cpf;
-        this.salarioBase;
+        this.salarioBase = salarioBase;
     }
 
 
