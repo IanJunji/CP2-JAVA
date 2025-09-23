@@ -4,7 +4,7 @@ public class Funcionario {
     String cpf;
     float salarioBase;
 
-    public static  main(String name, String cpf, float salarioBase) {
+    public Funcionario(String name, String cpf, float salarioBase) {
         this.name = name;
         this.cpf = cpf;
         this.salarioBase = salarioBase;
