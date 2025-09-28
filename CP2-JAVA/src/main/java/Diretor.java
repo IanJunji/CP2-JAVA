@@ -4,14 +4,15 @@ public class Diretor extends Gerente {
     public Diretor(String nome, String cpf, double salarioBase, double bonus, double porcentagemParticipacaoLucros) {
         super(nome, cpf, salarioBase, bonus);
         this.porcentagemParticipacaoLucros = porcentagemParticipacaoLucros;
-
-
     }
+
+    @Override
     public double getSalarioFinal() {
-        double participacao = super.getSalarioBase() * this.porcentagemParticipacaoLucros;
-        return super.getSalarioBase() + super.getBonus() + participacao;
-        
+        double base = super.getSalarioBase();
+        double participacao = base * this.porcentagemParticipacaoLucros;
+        return base + super.getBonus() + participacao;
     }
+
     public double getPorcentagemParticipacaoLucros() {
         return porcentagemParticipacaoLucros;
     }
